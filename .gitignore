@@ -79,3 +79,10 @@ workspace.xml
 # Xcode Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+
+# Added directories
+*.xcodeproj/xcuserdata
+*.xcodeproj/xcworkspacedata
+*.xcodeproj/xcshareddata
+*.xcworkspace/
+
