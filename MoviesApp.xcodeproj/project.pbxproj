@@ -24,6 +24,7 @@
 		5AA4E50F2C35E0D900D37DBC /* MoviesModelEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA4E50B2C35E0D900D37DBC /* MoviesModelEntity+CoreDataClass.swift */; };
 		5AA4E5102C35E0D900D37DBC /* MovieModelEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA4E50C2C35E0D900D37DBC /* MovieModelEntity+CoreDataClass.swift */; };
 		5AA4E5112C35E0D900D37DBC /* MovieModelEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA4E50D2C35E0D900D37DBC /* MovieModelEntity+CoreDataProperties.swift */; };
+		5AA4E5132C369E1400D37DBC /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA4E5122C369E1400D37DBC /* NetworkReachabilityManager.swift */; };
 		9C20BF605013DC386E559F40 /* Pods_MoviesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F4A80D51D04C1611DA2854 /* Pods_MoviesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		5AA4E50B2C35E0D900D37DBC /* MoviesModelEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoviesModelEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5AA4E50C2C35E0D900D37DBC /* MovieModelEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MovieModelEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5AA4E50D2C35E0D900D37DBC /* MovieModelEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MovieModelEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5AA4E5122C369E1400D37DBC /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				5A0E7BDB2C3302D5005CF67E /* CoreData */,
 				5A0E7BDA2C3302CB005CF67E /* API */,
+				5AA4E5122C369E1400D37DBC /* NetworkReachabilityManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				5A4B3DDE2C336D79009048DF /* Encodable+Extension.swift in Sources */,
 				5A4B3DDC2C336CB9009048DF /* StorageManager.swift in Sources */,
 				5A4B3DD82C331680009048DF /* APIRequests.swift in Sources */,
+				5AA4E5132C369E1400D37DBC /* NetworkReachabilityManager.swift in Sources */,
 				5A0E7BBF2C32FBEE005CF67E /* AppDelegate.swift in Sources */,
 				5A0E7BC92C32FBEE005CF67E /* MoviesApp.xcdatamodeld in Sources */,
 				5A0E7BC12C32FBEE005CF67E /* SceneDelegate.swift in Sources */,
