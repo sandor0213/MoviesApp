@@ -7,10 +7,20 @@
 
 import Alamofire
 
+enum NetworkError: Error {
+    case noInternetConnection
+}
+
 final class APIService {
-    typealias CompletionHandler<T: Decodable> = (Result<T, AFError>) -> Void
+    typealias CompletionHandler<T: Decodable> = (Result<T, Error>) -> Void
     
     static func request<T: Decodable>( apiPath: String, method: HTTPMethod, parameters: [String: String]?, body: Data? = nil, responseType: T.Type, completion: @escaping CompletionHandler<T>) {
+        
+        guard NetworkReachabilityManager.shared.isReachable else {
+            completion(.failure(NetworkError.noInternetConnection))
+            return
+        }
+        
         let urlString = Constants.API.baseURL + apiPath
         guard let url = URL(string: urlString) else {
             completion(.failure(AFError.invalidURL(url: urlString)))
