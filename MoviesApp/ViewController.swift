@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         APIRequests.getMoviesPopular { result in
             switch result {
             case .success(let model):
-                print("Movies: \(model)")
+                print("Movies: \(model.results?.count) == \(model)")
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
             }
