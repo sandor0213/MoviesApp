@@ -1,0 +1,88 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.moved-aside
+*.xcscmblueprint
+*.xccheckout
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+# Add this line if you have `Package.resolved` checked in to source control
+# Packages.resolved
+Packages/
+.build/
+Package.pins
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Accio dependency manager
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Code Injection by AppCode
+.idea/
+
+# AppCode
+*.iml
+.idea/
+.idea_modules/
+atlassian-ide-plugin.xml
+workspace.xml
+.idea/*.xml
+.idea/dictionaries
+.idea/shelf
+.idea/workspace.xml
+
+# Other
+*.swp
+*.lock
+*.xcuserstate
+
+# SPM Packages
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+/*.gcno 
+
+# Xcode Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Added directories
+*.xcodeproj/xcuserdata
+*.xcodeproj/xcworkspacedata
+*.xcodeproj/xcshareddata
+*.xcworkspace/
+

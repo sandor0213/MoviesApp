@@ -11,9 +11,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        APIRequests.getMoviesPopular { result in
+            switch result {
+            case .success(let model):
+                print("Movies: \(model.results?.count) == \(model)")
+            case .failure(let error):
+                print("Error: \(error.localizedDescription)")
+            }
+        }
     }
-
-
 }
 
