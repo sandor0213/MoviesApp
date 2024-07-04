@@ -15,4 +15,8 @@ struct Constants {
         
         static let moviePopularPath = "movie/popular"
     }
+    
+    struct PersistentContainer {
+        static let persistentContainerName = "MoviesApp"
+    }
 }
