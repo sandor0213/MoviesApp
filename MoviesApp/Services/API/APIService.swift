@@ -15,14 +15,16 @@ final class APIService {
     typealias CompletionHandler<T: Decodable> = (Result<T, Error>) -> Void
     
     static func request<T: Decodable>( apiPath: String, method: HTTPMethod, parameters: [String: String]?, body: Data? = nil, responseType: T.Type, completion: @escaping CompletionHandler<T>) {
-        
+        ProgressHUD.show()
         guard NetworkReachabilityManager.shared.isReachable else {
+            ProgressHUD.dismiss()
             completion(.failure(NetworkError.noInternetConnection))
             return
         }
         
         let urlString = Constants.API.baseURL + apiPath
         guard let url = URL(string: urlString) else {
+            ProgressHUD.dismiss()
             completion(.failure(AFError.invalidURL(url: urlString)))
             return
         }
@@ -38,6 +40,7 @@ final class APIService {
             AF.request(urlRequest)
                 .validate()
                 .responseDecodable(of: responseType) { response in
+                    ProgressHUD.dismiss()
                     switch response.result {
                     case .success(let decodedResponse):
                         completion(.success(decodedResponse))
@@ -46,6 +49,7 @@ final class APIService {
                     }
                 }
         } catch {
+            ProgressHUD.dismiss()
             completion(.failure(AFError.createURLRequestFailed(error: error)))
         }
     }

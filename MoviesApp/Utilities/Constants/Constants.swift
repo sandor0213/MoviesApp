@@ -19,4 +19,8 @@ struct Constants {
     struct PersistentContainer {
         static let persistentContainerName = "MoviesApp"
     }
+    
+    struct Main {
+        static let languageKey = "language"
+    }
 }
