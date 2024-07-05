@@ -7,5 +7,7 @@ target 'MoviesApp' do
 
   # Pods for MoviesApp
   pod 'Alamofire'
+  pod 'SVProgressHUD'
+  pod 'Kingfisher', '~> 7.0'
 
 end

@@ -1,0 +1,19 @@
+//
+//  Localizable.strings
+//  MoviesApp
+//
+//  Created by Balogh Sandor on 04/07/2024.
+//
+
+"Error" = "Error";
+"You are offline. Please, enable your Wi-Fi or connect
+using cellular data." = "You are offline. Please, enable your Wi-Fi or connect
+using cellular data.";
+"Popular Movies" = "Popular Movies";
+"Unknown title" = "Unknown title";
+"No ratings" = "No ratings";
+"Sort Options" = "Sort Options";
+"Choose a sort option" = "Choose a sort option";
+"Cancel" = "Cancel";
+"Sort by Title" = "Sort by Title";
+"Sort by Rating" = "Sort by Rating";

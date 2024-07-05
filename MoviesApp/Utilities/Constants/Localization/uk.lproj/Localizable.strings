@@ -1,0 +1,19 @@
+//
+//  Localizable.strings
+//  MoviesApp
+//
+//  Created by Balogh Sandor on 04/07/2024.
+//
+
+"Error" = "Помилка";
+"You are offline. Please, enable your Wi-Fi or connect
+using cellular data." = "Ви офлайн. Будь ласка, увімкніть Wi-Fi або підключіться
+за допомогою мобільних даних.";
+"Popular Movies" = "Популярні фільми";
+"Unknown title" = "Невідома назва";
+"No ratings" = "Немає оцінок";
+"Sort Options" = "Опції сортування";
+"Choose a sort option" = "Оберіть опцію сортування";
+"Cancel" = "Скасувати";
+"Sort by Title" = "Сортувати за назвою";
+"Sort by Rating" = "Сортувати за рейтингом";
